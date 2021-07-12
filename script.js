@@ -33,4 +33,8 @@ startCheck.addEventListener("click", () => {
     alert("Tačan broj je "+ numberGuessed + " i vaš skor je " + highScoreCounter );
     secretNumber.innerHTML = numberGuessed
   }
+  if(highScoreCounter === 0){
+    alert('Igra je gotova , pocinjemo opet !!!')
+    location.reload()
+  }
 });
